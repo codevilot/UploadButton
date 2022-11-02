@@ -15,7 +15,6 @@ export const Icon = ({ src }) => {
     fontWeight: "700",
     fontSize: "12px",
     lineHeight: "100%",
-    paddingRight: "5px",
   };
   const disabledStyle = {
     ...style,
