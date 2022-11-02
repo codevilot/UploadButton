@@ -1,0 +1,30 @@
+{
+  "name": "uploadbutton",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p watch server -- --open",
+    "dev": "npm run server",
+    "server": "webpack server -c webpack/dev.js",
+    "bundle": "webpack bundle -c webpack/dev.js",
+    "build": "webpack build -c webpack/prod.js",
+    "watch": "npm run build -- --watch"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "npm-run-all": "^4.1.5",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.4",
+    "webpack-cli": "^4.10.0"
+  }
+}
